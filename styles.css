@@ -1,0 +1,145 @@
+body {
+  font-style: italic;
+  color: rgb(131, 127, 94);
+  background-color: rgb(180, 174, 135);
+  user-select: none;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@font-face {
+  font-family: "Argentina";
+  src: url("fonts/argentina-script-argentina-script-400.ttf");
+}
+
+p {
+  margin-block-start: 0.1em;
+  margin-block-end: 0.1em;
+  text-shadow: 0 0 15px transparent;
+  transition: text-shadow 1000ms;
+}
+
+p:hover {
+  transition-duration: 200ms;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 1);
+}
+
+#main-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  min-width: 800px;
+  flex-direction: column;
+}
+
+#title {
+  text-align: center;
+  font-size: 25px;
+  cursor: default;
+  transition-duration: 1000ms;
+  font-family: "Argentina";
+}
+
+#title:hover {
+  transition-duration: 200ms;
+  font-size: 30px;
+  color: rgba(255, 255, 255, 1);
+  text-shadow: 0 0 10px white;
+}
+
+.foto-container {
+  width: 500px;
+  height: 375px;
+  border-radius: 50%;
+  overflow: hidden;
+  transition-duration: 1000ms;
+  cursor: default;
+  position: relative;
+  box-shadow: 0 0 50px transparent;
+}
+
+.foto-container:hover {
+  transition-duration: 200ms;
+  height: 520px;
+  width: 520px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px black;
+}
+
+.gradient {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.5), transparent);
+  transition-duration: 1000ms;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+}
+
+.gradient:hover {
+  opacity: 1;
+  transition-duration: 200ms;
+}
+
+.foto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.foto:hover {
+  width: 520px;
+}
+#data {
+  font-size: 50px;
+  transition-duration: 1000ms;
+}
+
+#data:hover {
+  transition-duration: 200ms;
+  font-size: 80px;
+  cursor: default;
+  color: rgba(255, 255, 255, 1);
+}
+
+#horario {
+  font-size: 45px;
+  transition-duration: 1000ms;
+  margin: 0px;
+}
+
+#horario:hover {
+  transition-duration: 200ms;
+  font-size: 85px;
+  cursor: default;
+  color: rgba(255, 255, 255, 1);
+}
+
+.ornament {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gold {
+  height: 250px;
+  position: fixed;
+  transition-duration: 1000ms;
+  filter: brightness(1) drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.5));
+}
+
+.left {
+  transform: rotate(90deg);
+  float: left;
+}
+
+.right {
+  transform: rotate(-90deg);
+  float: right;
+}
+
+.gold:hover {
+  transition-duration: 200ms;
+  filter: brightness(1.5) drop-shadow(0px 0px 10px black);
+}
